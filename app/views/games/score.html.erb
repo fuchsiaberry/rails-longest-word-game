@@ -1,0 +1,23 @@
+<h1>You Score</h1><br>
+
+<div>********* Welcome to the longest word-game! *********</div><br>
+<div>Here is your grid:</div><br>
+
+<div><%= params[:letters] %></div><br>
+
+
+<div>*****************************************************</div><br>
+</div>What is your longest word?</div><br>
+
+</div>******** Now your results ********</div><br>
+</div>Your word: <%= params[:word] %></div><br>
+
+<% if @letter_check %>
+  <% if @word_check %>
+    </div>Congratulations, <%= params[:word] %> is a valid word</div><br>
+  <% elsif @word_check == false %>
+    </div>Sorry, <%= params[:word] %> is not a valid word</div><br>
+  <% end %>
+<% else %>
+  </div>Sorry, <%= params[:word] %> can't be formed with the given letters</div><br>
+<% end %>

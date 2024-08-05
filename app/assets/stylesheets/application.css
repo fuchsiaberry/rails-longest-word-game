@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ /* .grid-container {
+  display: inline-grid;
+}
+
+.grid-item {
+  border-style: solid;
+  border-color: blue;
+} */
